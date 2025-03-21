@@ -37,5 +37,10 @@ public class CodeWithoutStream {
         //Greater that 1
         System.out.println(data.stream().filter(i -> i>1).collect(Collectors.toList()));
 
+
+
+        List<Integer> data2= data;
+        data2.stream().filter(i->i%2!=0).forEach(System.out::println);
+
     }
 }

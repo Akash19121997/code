@@ -1,5 +1,8 @@
 package Arrays;
 
+import java.sql.SQLOutput;
+import java.util.*;
+
 public class FindMaxMin {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,1,20,35,12};
@@ -12,5 +15,10 @@ public class FindMaxMin {
                 max=arr[i];
         }
         System.out.println("Max : "+max+" , Min :"+min);
+
+
+        //Using stream
+        System.out.println(Arrays.stream(arr).min().getAsInt());
+        System.out.println(Arrays.stream(arr).max().getAsInt());
     }
 }

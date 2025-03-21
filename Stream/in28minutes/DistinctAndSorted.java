@@ -14,7 +14,18 @@ public class DistinctAndSorted {
         //result.forEach(System.out::println);
 
         List<Integer> unsortedNumbers = Arrays.asList(5,1,4,8,2,-1);
-        unsortedNumbers.stream().sorted().forEach(System.out::println);
+        //unsortedNumbers.stream().sorted().forEach(System.out::println);
+
+        //for descending
+        //unsortedNumbers.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+
+        List<String> cities = List.of("Pune", "Kolkata", "Delhi","Mumbai", "Punjab");
+
+        List<Integer> len= cities.stream().map(String::length).collect(Collectors.toList());
+        System.out.println(len);
+
+        Comparator<String> c= Comparator.comparing(String::length).reversed();
+        //cities.stream().sorted(Comparator.comparing(x -> x.length())).forEach(System.out::println);
     }
 
 
