@@ -12,6 +12,7 @@ public class Question2 {
 
         //max
         int max= numbers.stream().max(Integer::compare).get();
+        max = numbers.stream().reduce(0,(a,b)->a>b?a:b);
         System.out.println("max ="+max);
 
         //list of string to uppercase

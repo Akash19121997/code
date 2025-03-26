@@ -3,7 +3,15 @@ package Multithreading;
 public class ThreadDemo extends Thread{
 
     public void run() {
-        System.out.println("Akash Das");
+        for(int i=10;i>=1;i--) {
+            System.out.print(i+" ");
+            try{
+                Thread.sleep(2000); // wait for 1000 ms
+            }
+            catch(InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void main(String[] args) {
