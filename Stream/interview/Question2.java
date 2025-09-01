@@ -59,7 +59,7 @@ public class Question2 {
         //find all elements starting with J
         names.stream().filter(e -> e.startsWith("J")).forEach(System.out::println);
 
-        //sort string alphabitacilly in reverse order
+        //sort string alphabetically in reverse order
         names.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 
         //partition even and odd

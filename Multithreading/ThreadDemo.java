@@ -31,7 +31,7 @@ public class ThreadDemo extends Thread{
         //setName() method is used to set the name of the thread
         //run() method is used to perform the task of the thread
         //start() method is used to start the thread by allocating resources
-        //getIdd() method is used to get the id of the thread
+        //getId() method is used to get the id of the thread
         //setPriority() method is used to set the priority of the thread
         //getPriority() method is used to get the priority of the thread
         //sleep() method is used to pause the thread for a specified time

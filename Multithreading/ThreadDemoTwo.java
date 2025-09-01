@@ -15,8 +15,10 @@ public class ThreadDemoTwo implements Runnable {
     public static void main(String[] args) {
         ThreadDemoTwo threadDemoTwo = new ThreadDemoTwo();
         Thread thread = new Thread(threadDemoTwo);
-        ThreadDemo threadDemo = new ThreadDemo();
         thread.start();
+
+
+        ThreadDemo threadDemo = new ThreadDemo();
         threadDemo.start();
     } 
 }

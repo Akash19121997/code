@@ -1,5 +1,6 @@
 package Stream;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,6 +23,6 @@ public class Methods {
         number.stream().sorted().forEach(System.out::print);
 
         //Comparator
-        System.out.println(number.stream().min((x,y)->y.compareTo(x)).get());
+        System.out.println(number.stream().max(Comparator.naturalOrder()).get());
     }
 }

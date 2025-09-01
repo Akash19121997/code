@@ -12,6 +12,7 @@ public class StringConcepts {
         System.out.println(c==d);
         System.out.println(c.equals(d));
         System.out.println(a==c);
+        System.out.println(a.equals(c));
 
         System.out.println("------------");
 

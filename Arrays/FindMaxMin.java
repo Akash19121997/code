@@ -20,5 +20,7 @@ public class FindMaxMin {
         //Using stream
         System.out.println(Arrays.stream(arr).min().getAsInt());
         System.out.println(Arrays.stream(arr).max().getAsInt());
+
+        System.out.println(Arrays.stream(arr).reduce(0,(a,b)-> a>b ? a:b));
     }
 }
