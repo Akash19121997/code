@@ -2,6 +2,7 @@ package Stream.in28minutes;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class Addition {
 
@@ -16,6 +17,9 @@ public class Addition {
         //way 2
         int sum2=number.stream().reduce(0, (a,b)->a+b);
         System.out.println("Sum of all numbers : "+sum2);
+
+        int sum3 = number.stream().reduce((x, y) -> x+y).get();
+        System.out.println("Sum of all numbers : "+sum3);
     }
 
     //way 1

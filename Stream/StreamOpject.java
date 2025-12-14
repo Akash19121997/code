@@ -19,5 +19,11 @@ public class StreamOpject {
         Stream<Object> streamBuilder = Stream.builder().build();
 
         //4. Using collection object
+
+        // Static method
+        Stream.of(name).forEach(System.out::println);
+
+        // Stream Iterate
+        Stream.iterate(1, i -> i +1 ).limit(10).filter(i -> i%2==0).forEach(System.out::print);
     }
 }

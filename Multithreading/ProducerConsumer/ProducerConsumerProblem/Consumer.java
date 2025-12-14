@@ -1,4 +1,4 @@
-package Multithreading.ProducerConsumerProblem;
+package Multithreading.ProducerConsumer.ProducerConsumerProblem;
 
 public class Consumer extends Thread{
 
