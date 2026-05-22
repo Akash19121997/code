@@ -1,5 +1,9 @@
 package Arrays;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.stream.Stream;
+
 public class LargestString {
     public static void main(String[] args){
         String arr[] = {"Akash", "Rajesh", "Priyanka Das"};
@@ -9,5 +13,8 @@ public class LargestString {
                 largest = arr[i];
         }
         System.out.println(largest);
+        String result = Stream.of(arr).max(Comparator.comparing(String::length)).get();
+        System.out.println(result);
+        System.out.println(Arrays.stream(arr).reduce(arr[0],(a,b) -> a.length() > b.length() ? a:b));
     }
 }

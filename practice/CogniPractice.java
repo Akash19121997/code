@@ -18,6 +18,8 @@ public class CogniPractice {
         //Write a Java 8 program to square the list of numbers and then filter out the
         //numbers greater than 5 and then find the average of the remaining numbers
 
+
+
         Double average = list.stream().map(x -> x*x).filter(x -> x>5).mapToInt(x -> x).average().getAsDouble();
         System.out.println("Average of all numbers : "+average);
 

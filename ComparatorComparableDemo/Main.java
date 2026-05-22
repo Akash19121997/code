@@ -17,7 +17,7 @@ public class Main {
         songs.add(s1);
         songs.add(s2);
         songs.sort(new ComparatorImpl());
-        //songs.forEach(System.out::println);
+        songs.forEach(System.out::println);
 
     }
 }

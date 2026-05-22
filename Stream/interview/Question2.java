@@ -23,6 +23,7 @@ public class Question2 {
         Map<Integer, List<String>> len= names.stream().collect(Collectors.groupingBy(String::length));
         System.out.println(len);
 
+
         //sum using reduce
         int sum= numbers.stream().reduce(0, (x,y) -> x+y);
         System.out.println("sum="+sum);

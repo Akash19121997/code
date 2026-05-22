@@ -20,9 +20,9 @@ public class Methods {
 
         //Sorted
 
-        number.stream().sorted().forEach(System.out::print);
+        number.stream().sorted().forEach(System.out::println);
 
         //Comparator
-        System.out.println(number.stream().max(Comparator.naturalOrder()).get());
+        System.out.println(number.stream().max(Integer::compare).get());
     }
 }
